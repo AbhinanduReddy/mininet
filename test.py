@@ -43,6 +43,11 @@ class NetworkTopo( Topo ):
     "A LinuxRouter connecting three IP subnets"
 
     def build( self, **_opts ):
+        id=250
+        for i in range(250,351):
+            r='r'+str(id)
+            ipp='10.'+str(id)+'.4.14'
+            self.addNode(r,cls=LinuxRouter,ip=ipp)
 
         defaultIP = '192.168.1.1/24'  # IP address for r0-eth1
         router = self.addNode( 'r0', cls=LinuxRouter, ip=defaultIP )
