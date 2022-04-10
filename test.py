@@ -43,7 +43,7 @@ class NetworkTopo( Topo ):
     "A LinuxRouter connecting three IP subnets"
 
     def build( self, **_opts ):
-        id=250
+        
         for i in range(250,351):
             r='r'+str(id)
             ipp='10.'+str(id)+'.4.14'
