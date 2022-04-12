@@ -39,7 +39,7 @@ class MyTopo( Topo ):
         for i in range(len(column1)):
           self.addLink('s'+str(column1[i]),'s'+str(column2[i]))
          
-        self.addLink('h251','s251')
+        self.addLink('h251.0','s251.0')
             
           
           
