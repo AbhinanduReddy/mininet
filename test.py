@@ -19,7 +19,7 @@ class MyTopo( Topo ):
         for i in range(250,300):
             s='s'+str(i)
             d[s]=self.addSwitch(s)
-        with open('/test_file.txt') as f:
+        with open('test_file.txt') as f:
           line = f.readline()
           while line:
             line = f.readline()
