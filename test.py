@@ -21,9 +21,10 @@ class MyTopo( Topo ):
             d[s]=self.addSwitch(s)
         with open(r'test_file.txt') as f:
           line = f.readline()
-          while line:
-            line = f.readline()
-            self.addLink(d[line[0:3]],d[line[4::]])
+          print(line[0:3])
+#           while line:
+#             line = f.readline()
+#             self.addLink(d[line[0:3]],d[line[4::]])
 #          # Add hosts and switches
 #         leftHost = self.addHost( 'h1' )
 #         rightHost = self.addHost( 'h2' )
