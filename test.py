@@ -44,8 +44,9 @@ class NetworkTopo( Topo ):
 
     def build( self, **_opts ):
         a={}
+        
         for i in range(250,351):
-            s=s+str(id)
+            s='s'+str(id)
             a[s]=self.addSwitch(s)
         
             
