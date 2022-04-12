@@ -24,7 +24,8 @@ class MyTopo( Topo ):
           print(line[0:3])
           while line:
             line = f.readline()
-            self.addLink(d['s'+str(line[0:3])],d['s'+str(line[4::])])
+            x='s'+str(line[4::])
+            self.addLink(d['s'+str(line[0:3])],d[x.split('\n')[0])
 #          # Add hosts and switches
 #         leftHost = self.addHost( 'h1' )
 #         rightHost = self.addHost( 'h2' )
