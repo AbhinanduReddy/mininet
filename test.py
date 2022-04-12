@@ -16,7 +16,7 @@ class MyTopo( Topo ):
     def build( self ):
         "Create custom topo."
         d={}
-        for i in range(250,300):
+        for i in range(250,301):
             s='s'+str(i)
             d[s]=self.addSwitch(s)
         with open(r'test_file.txt') as f:
