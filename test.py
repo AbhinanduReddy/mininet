@@ -29,7 +29,6 @@ class MyTopo( Topo ):
             s='s'+str(line[0:3])
             x='s'+str(line[4::])
             d[x.split('\n')[0]]=self.addSwitch(x.split('\n')[0])
-            self.addLink(d['s'+str(line[0:3])],d[x.split('\n')[0]])
         with open(r'test_file.txt') as f:
           line = f.readline()
           print(line[0:3])
