@@ -33,8 +33,11 @@ class MyTopo( Topo ):
             d[s]=self.addSwitch(s)
             h='h'+str(i)
             hh[h]=self.addHost(h)
+        self.addLink('s240,'h1')
+        self.addLink('s250','h251')
         for i in range(len(column1)):
           self.addLink('s'+str(column1[i]),'s'+str(column2[i]))
+            
           
           
 
