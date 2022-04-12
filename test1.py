@@ -35,7 +35,7 @@ class MyTopo( Topo ):
             hh[h]=self.addHost(h)
         for i in range(len(column1)):
           self.addLink('s'+str(column1[i]),'s'+str(column2[i]))
-          self.addLink('s'+str(column1[i]),'h'+str(column2[i]))
+          
           
 
 
